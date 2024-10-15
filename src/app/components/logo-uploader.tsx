@@ -11,6 +11,6 @@ export default function LogoUploader({
     label, placeholder, id, ...rest
 }: LogoUploaderProps) {
     return (
-
+<div></div>
     )
 }
