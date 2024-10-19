@@ -1,4 +1,5 @@
-import StatusLabel, {Status} from '@/app/components/status-label';
+
+import React from "react";
 import AddCompanyButton from "@/app/components/add-company-button";
 
 export default function Home() {
