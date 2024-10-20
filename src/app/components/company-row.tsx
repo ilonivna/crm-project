@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import clsx from "clsx";
 import StatusLabel, { Status } from "@/app/components/status-label";
-import {LRUCache} from "lru-cache";
+import check from "../../public/icons/check.svg";
+import xmark from "../../public/icons/x-mark.svg";
 
 
 export interface CompanyRowProps {
@@ -36,7 +37,7 @@ return (
         </td>
         <td>
             <div className="inline-flex items-center gap-1">
-                <Image src={`/icons/${promotion ? 'check' : 'x-mark'}.svg`} alt="promotion icon" width={16} height={16}/>
+                <Image src={promotion ? check : xmark} alt="promotion icon" width={16} height={16}/>
                 <span className={clsx('text-sm font-medium', promotion ? 'text-green-700' : 'text-red-700')}>
                     {promotion ? 'Yes' : 'No'}
                 </span>

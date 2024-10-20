@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from "next/image";
+import magnifying from "../../public/icons/magnifying-glass.svg";
 
 export interface SearchInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
     onSearchClick?: React.MouseEventHandler<HTMLButtonElement>;
@@ -18,7 +19,7 @@ export default function SearchInput({ onSearchClick, ...rest }: SearchInputProps
                 type="button"
                 onClick={onSearchClick}
             >
-                <Image src="/icons/magnifying-glass.svg" alt="search icon" width={20} height={20}/>
+                <Image src={magnifying} alt="search icon" width={20} height={20}/>
             </button>
         </div>
     );
